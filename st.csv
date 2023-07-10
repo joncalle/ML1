@@ -1,5 +1,6 @@
 x,y
 user-guide, row=23   print(data.iloc[row  0])   data.iloc[row  1]
+chat,<a href="https://chat.openai.com/auth/login?sso">chat</a>
 import, import pandas as pd     from scipy.stats import binom    poisson  nbinom  geom    import math
 CLT - Conditions 1, Independence Condition: Sampled observations must be independent. This is difficult to verify but is more likely if random sampling/assignment is used and if sampling without replacement n < 10% of the population
 CLT - Conditions 2, Success-Failure Condition (Sample Size): There should be at least 10 expected successes and 10 expected failures in the observed sample
