@@ -31,3 +31,6 @@ Double-blind, when both the experimental units and the researchers who interact 
 Difference observational studies and experiments, Most experiments use random assignment while observational studies do not
 Law of large numbers, as more observations are collected the proportion of occurrences with a particular outcome p̂n converges to the probability of that outcome p
 Cards, What is the probability of drawing a jack or a red card from a well shuffled full deck? 4/42 + 26/52 -2/52 = 28/52
+independent events, (0.5)^2 You toss a coin twice what is the probability of getting two tails in a row? 
+independent events, 0.255^2 A recent Gallup poll suggests that 25.5% of Texans do not have health insurance as of June 2012. Assuming that the uninsured rate stayed constant what is the probability that two randomly selected Texans are both uninsured?
+independent events, 1 - 0.8^3 Roughly 20% of undergraduates at a university are vegetarian or vegan. What is the probability that among a random sample of 3 undergraduates at least one is vegetarian or vegan? P(at least 1 from veg)
