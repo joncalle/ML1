@@ -15,7 +15,7 @@ Python p-value, #What is the probability that the number of women chosen from a 
 z-table, What percent of a standard normal distribution N(μ = 0 σ = 1) is found in each region?  Z <−1.35 = 0.0885     Z >1.48 = 1−0.9306 = 0.0694    −0.4<Z <1.5 = P(Z < 1.5)−P(Z < −0.4) = 0.9332−0.3446 = 0.5886
 dice, If you roll a pair of fair dice what is the probability of getting a sum of 5?
 Geometric distribution, describes the waiting time until a success for independent and identically distributed (iid) Bernoulli random variables. independence: outcomes of trials don't affect each other. identical: the probability of success is the same for each trial
-Python Geometric Dist. Calculate the probability of rolling a 6 for the first time on the 6th roll of a die using the geometric distribution. (5/6)**5 * (1/6)  p=1/6  n=6  GD = ((1-p)**(n-1))*p   print(GD)     print(geom(p).pmf(n)) 
+Python Geometric Dist, Calculate the probability of rolling a 6 for the first time on the 6th roll of a die using the geometric distribution. (5/6)**5 * (1/6)  p=1/6  n=6  GD = ((1-p)**(n-1))*p   print(GD)     print(geom(p).pmf(n)) 
 Python Geometric Dist Milgram experiments, 35% of people refused to administer a shock. What is the probability that she stops after the 10th person? p=0.35   n=10   GD = ((1-p)**(n-1))*p    print(GD)
 Python Geometric Dist Milgram experiments, print(geom(p).pmf(n)) 
 Python Negative Binomial Distribution, # Parameters  n = 3  # Number of failures   p = 0.4  # Success probability   # Calculate PMF for k successes    k = 5   probability = nbinom.pmf(k  n p)  print(probability)
