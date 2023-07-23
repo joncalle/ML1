@@ -1,7 +1,7 @@
 x,y
 user-guide, row=23   print(data.iloc[row  0])   data.iloc[row  1]
 chat,<a href="https://chat.openai.com/auth/login?sso">chat</a>
-import, import pandas as pd     from scipy.stats import binom    poisson  nbinom  geom  norm  import math
+import, import pandas as pd     from scipy.stats import binom    poisson  nbinom  geom  norm t import math
 CLT - Conditions 1, Independence Condition: Sampled observations must be independent. This is difficult to verify but is more likely if random sampling/assignment is used and if sampling without replacement n < 10% of the population
 CLT - Conditions 2, Success-Failure Condition (Sample Size): There should be at least 10 expected successes and 10 expected failures in the observed sample
 CLT - Conditions 3, Sample Size/Skew Condition (Distribution): Either the population distribution is normal or if the population distribution is skewed the sample size is large. Samples size must be (n>=30) to use normal distributions
@@ -26,7 +26,7 @@ Geometric distribution, describes the waiting time until a success for independe
 Python Geometric Dist, Calculate the probability of rolling a 6 for the first time on the 6th roll of a die using the geometric distribution. (5/6)**5 * (1/6)  p=1/6  n=6  GD = ((1-p)**(n-1))*p   print(GD)     print(geom(p).pmf(n)) 
 Python Geometric Dist Milgram experiments, 35% of people refused to administer a shock. What is the probability that she stops after the 10th person? p=0.35   n=10   GD = ((1-p)**(n-1))*p    print(GD)
 Python Geometric Dist Milgram experiments, print(geom(p).pmf(n)) 
-Python Negative Binomial Distribution, p = 0.10 #probability	k = 10 #success		n = 30 #trial		f = n-k		prob = nbinom.pmf(f , k ,p) 	print(prob)
+Python Negative Binomial Distribution, p = 0.10 #probability	k = 10 #success		n = 30 #trial		f = n-k		prob = nbinom.pmf(f  k p) 	print(prob)
 Python Negative Binomial Distribution, p = 0.10 k = 10 n = 30  f=n-k A college student working at a psychology lab is asked to recruit 10 couples to participate in a study. She decides to stand outside the student center and ask every 5th person leaving the building whether they are in a relationship and if so. whether they would like to participate in the study with their significant other. Suppose the probability of finding such a person is 10%. What is the probability that she will need to ask 30 people before she hits her goal?
 Python Negative Binomial Distribution, n = 10  p = 0.15  k = 3  f = n - k  nbinom.pmf(f k p) #A not-so-skilled volleyball player has a 15% chance of making the serve which involves hitting the ball so it passes over the net on a trajectory such that it will land in the opposing teams court. Suppose that her serves are independent of each other What is the probability that on the 10th try she will make her 3rd successful serve?
 Python t-distribution, n=10 df=n-1 alpha=0.05 t_start=t.ppf(1-alpha/2 df) print(t_start)
@@ -47,5 +47,5 @@ independent events, 0.255^2 A recent Gallup poll suggests that 25.5% of Texans d
 independent events, 1 - 0.8^3 Roughly 20% of undergraduates at a university are vegetarian or vegan. What is the probability that among a random sample of 3 undergraduates at least one is vegetarian or vegan? P(at least 1 from veg)
 spam filter, P(s|notB)=P(notB|S)0.04 x P(S)0.08/ P(notB|S)xP(S) + P(notB|notS)0.95 x P(notS)0.2 =0.1441  A spam filter blocks 96% of spam messages. However it also incorrectly blocks 5% of the messages that are not spam. If 80% of the messages that the spam filter processes are spam what is the probability that a message that is not blocked is actually spam?
 t – Distribution, When the sample size <= 30 and/or we dont know the variance/standard deviation of the population we can use the t-distribution instead of the z-distribution.
-Degrees of Freedom, It is an adjustment to the sample size (df) = n- 1 for tdistribution The general idea is that we are estimating from a smaller sample about a large population and we don’t know the population variance/standard deviation, so we use the sample variance/standard deviation. and estimate the error based on sample size.
+Degrees of Freedom, It is an adjustment to the sample size (df) = n- 1 for tdistribution The general idea is that we are estimating from a smaller sample about a large population and we don’t know the population variance/standard deviation so we use the sample variance/standard deviation. and estimate the error based on sample size.
 t – Dist vs z – Dist, t-distribution enables us to use a small sample size (<=30)  The t-distribution has a larger margin of error  The t-distribution margin of error depends on the degrees of freedom (df)   Always centered at 0 (like the z-distribution)
