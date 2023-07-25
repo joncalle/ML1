@@ -1,5 +1,4 @@
 x,y
-chat,<a href="https://chat.openai.com/auth/login?sso">chat</a>
 user-guide, row=23   print(data.iloc[row  0])   data.iloc[row  1]
 install packages, !pip install category_encoders     !pip install rfpimp    from rfpimp import *    import category_encoders as ce   from sklearn.model_selection import train_test_split   from sklearn.ensemble import RandomForestRegressor    from sklearn.metrics import mean_absolute_error r2_score
 out-of-bag score, The out-of-bag (OOB) score is a measure of the performance of a random forest model that uses the samples that were not included in the bootstrap sample for training. This allows us to evaluate the model performance without the need for a separate validation set.
