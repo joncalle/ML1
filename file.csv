@@ -35,6 +35,6 @@ x,y
 34, np.random.seed(1230)  X = np.random.randint(0- 255- (2932- 109- 99))    print(X[463- 1160 // 99- 1160 % 99] / 255)  R=0.23137254901960785
 35, You have image data that comes in an array of dimension (31511 47 58). This data needs to be fed into a fully-connected neural network.  What array dimensions does your data need?   R=(31511 2726)
 36, A fully connected neural network is constructed with architecture the first hidden layer with 3 neurons.  the second hidden layer with 4 neurons and the third layer (output layer) contains 1 neuron.  it takes a input from a sample X where each sample contains 5 features. 
-37, What would be the shape of the first hidden layers weight matrix given the representation of output from layer 1 is given by a[1] = sigma (W[1]]. x° + B[1])) R= (3, 5)
+37, What would be the shape of the first hidden layers weight matrix given the representation of output from layer 1 is given by a[1] = sigma (W[1]]. x° + B[1])) R= (3- 5)
 38, when you add a dropout layer waht would be the output of the deactivated neuron during the forward pass? R=0
-39, Short of what is defined as ReLu(x)=max(0,x)   R=Rectified linear unit
+39, Short of what is defined as ReLu(x)=max(0 x)   R=Rectified linear unit
